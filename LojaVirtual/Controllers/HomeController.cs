@@ -16,12 +16,15 @@ namespace LojaVirtual.Controllers
         {
             return View();
         }
+        public IActionResult ContatoAcao()
+        {
+            return new ContentResult() { Content = "Contato Recebido Com Sucesso!" };
+        }
 
         public IActionResult Login()
         {
             return View();
         }
-
         public IActionResult CadastroCliente()
         {
             return View();
