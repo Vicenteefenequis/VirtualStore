@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vicen\\Desktop\\ASPNETCoreMVCLojaVirtual\\Seção 07\\LojaVirtual\\LojaVirtual\\LojaVirtual.csproj": {}
+    "C:\\Users\\vicen\\Desktop\\LojaVirtual\\virtual-store\\LojaVirtual\\LojaVirtual.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vicen\\Desktop\\ASPNETCoreMVCLojaVirtual\\Seção 07\\LojaVirtual\\LojaVirtual\\LojaVirtual.csproj": {
+    "C:\\Users\\vicen\\Desktop\\LojaVirtual\\virtual-store\\LojaVirtual\\LojaVirtual.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vicen\\Desktop\\ASPNETCoreMVCLojaVirtual\\Seção 07\\LojaVirtual\\LojaVirtual\\LojaVirtual.csproj",
+        "projectUniqueName": "C:\\Users\\vicen\\Desktop\\LojaVirtual\\virtual-store\\LojaVirtual\\LojaVirtual.csproj",
         "projectName": "LojaVirtual",
-        "projectPath": "C:\\Users\\vicen\\Desktop\\ASPNETCoreMVCLojaVirtual\\Seção 07\\LojaVirtual\\LojaVirtual\\LojaVirtual.csproj",
+        "projectPath": "C:\\Users\\vicen\\Desktop\\LojaVirtual\\virtual-store\\LojaVirtual\\LojaVirtual.csproj",
         "packagesPath": "C:\\Users\\vicen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vicen\\Desktop\\ASPNETCoreMVCLojaVirtual\\Seção 07\\LojaVirtual\\LojaVirtual\\obj\\",
+        "outputPath": "C:\\Users\\vicen\\Desktop\\LojaVirtual\\virtual-store\\LojaVirtual\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -41,6 +41,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
