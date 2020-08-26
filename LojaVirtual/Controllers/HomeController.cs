@@ -12,8 +12,17 @@ namespace LojaVirtual.Controllers
 {
     public class HomeController : Controller
     {
+        [HttpGet]
         public IActionResult Index()
         {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Index([FromForm]NewsletterEmail newsletter)
+        {
+            //TODO - Adição no banco de dados
+
+            //TODO - Validações
             return View();
         }
         public IActionResult Contato()
@@ -29,6 +38,7 @@ namespace LojaVirtual.Controllers
                 contato.Nome = HttpContext.Request.Form["nome"];
                 contato.Email = HttpContext.Request.Form["email"];
                 contato.Texto = HttpContext.Request.Form["texto"];
+
 
                 var listaMensagens = new List<ValidationResult>();
                 var contexto = new ValidationContext(contato);
