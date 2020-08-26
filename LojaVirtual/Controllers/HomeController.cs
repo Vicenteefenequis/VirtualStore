@@ -20,16 +20,27 @@ namespace LojaVirtual.Controllers
         }
         public IActionResult ContatoAcao()
         {
-            Contato contato = new Contato();
+            try
+            {
+                Contato contato = new Contato();
 
-            contato.Nome = HttpContext.Request.Form["nome"];
-            contato.Email = HttpContext.Request.Form["email"];
-            contato.Texto = HttpContext.Request.Form["texto"];
+                contato.Nome = HttpContext.Request.Form["nome"];
+                contato.Email = HttpContext.Request.Form["email"];
+                contato.Texto = HttpContext.Request.Form["texto"];
 
-            // ContatoEmail.EnviarContatoPorEmail(contato);
+                ContatoEmail.EnviarContatoPorEmail(contato);
 
-            ViewData["MSG_SUCESSO"] = "Mensagem de Contato enviado com sucesso!";
+                ViewData["MSG_SUCESSO"] = "Mensagem de Contato enviado com sucesso!";
 
+            }
+            catch (Exception ex2)
+            {
+                ViewData["MSG_ERROR"] = "Opps! Tivemos um erro, tente novamente mais tarde!";
+                 /*
+                 * TODO - IMPLEMENTAR LOG
+                 */
+            }
+          
             return View("Contato");
 ;
 
