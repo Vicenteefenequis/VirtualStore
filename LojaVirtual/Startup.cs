@@ -27,8 +27,6 @@ namespace LojaVirtual
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-
-
             string connection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LojaVirtual;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             services.AddDbContext<LojaVirtualContext>(options => options.UseSqlServer(connection));
         }
@@ -52,14 +50,6 @@ namespace LojaVirtual
 
             app.UseRouting();
             app.UseAuthorization();
-            /*
-             https://www.site.com.br -> Qual controlador?
-             https://www.site.com.br/Produto/Visualizar/MouseRazorZK
-             https://www.site.com.br/Produto/Visualizar/10
-             https://www.site.com.br/Produto/Visualizar -> Listagem de todos os produtos
-             https://www.site.com.br/Produto/Visualizar
-            */
-
 
 
             app.UseEndpoints(endpoints =>
