@@ -166,11 +166,12 @@
 }
 
 
-@using (Html.BeginForm("index", "home", FormMethod.Post))
+
+@using(Html.BeginForm(null,null,null,FormMethod.Post,false, new { @action = @Url.Action("index", "home") + "#formulario"}))
 {
-        <div class="container">
+        <div class="container" id="formulario">
             <div class="row">
-                <div class="col-sm-6 offset-sm-2">
+                <div class="col-sm-8 offset-sm-2">
                     @if (TempData["MSG_SUCESSO"] != null)
                     {
                         <p class="alert alert-success">@TempData["MSG_SUCESSO"]</p>
@@ -192,7 +193,7 @@
                 </div>
                 <div class="col-sm-2">
                     <br />
-                    <button class="subscribe btn btn-primary btn-block" type="submit"> Cadastrar-se </button>
+                    <button class="subscribe btn btn-primary btn-block" style="margin-top:7px;" type="submit"> Cadastrar-se </button>
                 </div>
 
             </div>
