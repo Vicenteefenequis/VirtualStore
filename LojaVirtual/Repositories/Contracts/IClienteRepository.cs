@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LojaVirtual.Repositories
 {
-    interface IClienteRepository
+    public interface IClienteRepository
     {
         Cliente Login(string Email,string Senha);
 
@@ -15,7 +15,7 @@ namespace LojaVirtual.Repositories
         void Atualizar(Cliente cliente);
         void Excluir(int Id);
         Cliente ObterCliente(int Id);
-        List<Cliente> ObterTodosClientes();
+        IEnumerable<Cliente> ObterTodosClientes();
 
     }
 }
