@@ -36,6 +36,11 @@ namespace LojaVirtual
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<INewsletterRepository, NewsletterRepository>();
 
+            //Session - Configuração
+            services.AddMemoryCache();
+            services.AddSession(options => {
+
+            });
 
             services.AddControllersWithViews();
             string connection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LojaVirtual;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
@@ -60,6 +65,7 @@ namespace LojaVirtual
 
             app.UseRouting();
             app.UseAuthorization();
+            app.UseSession();
 
 
             app.UseEndpoints(endpoints =>
