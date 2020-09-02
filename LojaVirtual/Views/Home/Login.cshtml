@@ -14,9 +14,13 @@
             <div id="code_login_1">
                 <div class="card">
                     <article class="card-body">
-                        <a asp-action="CadastroCliente" asp-controller="Home"class="float-right btn btn-outline-primary">Cadastra-se</a>
+                        @if (ViewData["MSG_ERROR"] != null)
+                        {
+                            <p class="alert alert-danger">@Html.Raw(ViewData["MSG_ERROR"])</p>
+                        }
+                        <a asp-action="CadastroCliente" asp-controller="Home" class="float-right btn btn-outline-primary">Cadastra-se</a>
                         <h4 class="card-title mb-4 mt-1">Entrar</h4>
-                        <form method="post"> 
+                        <form method="post">
                             <div class="form-group">
                                 <label>E-mail</label>
                                 <input asp-for="Email" class="form-control" placeholder="Email" type="email">
@@ -28,7 +32,7 @@
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-block"> Acessar </button>
-                            </div> 
+                            </div>
                         </form>
                     </article>
                 </div> 
