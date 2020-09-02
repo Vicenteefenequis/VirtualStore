@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4HcbmeSzKAmMSuhE9v1XwT0B9tyo9oDALds3Wn+fhDaP4jVpPIVTyEbQ0KSHSJa6mxoUJ2XMcQAjHIr7pPumlw==",
+  "dgSpecHash": "qvsR6JesW3scn6Rz8MpkVBBQfatpYsY1E7/5WolAO82cmebfu6NvAHySkKubUqOG1fF26Gz6uIcNiGG3EW4ukw==",
   "success": true,
   "projectFilePath": "C:\\Users\\vicen\\Desktop\\LojaVirtual\\virtual-store\\LojaVirtual\\LojaVirtual.csproj",
   "expectedPackageFiles": [
@@ -60,7 +60,7 @@
     "C:\\Users\\vicen\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\vicen\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\vicen\\.nuget\\packages\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\vicen\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\vicen\\.nuget\\packages\\nuget.frameworks\\4.7.0\\nuget.frameworks.4.7.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",

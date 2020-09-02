@@ -185,9 +185,6 @@ C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreap
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.csproj.CoreCompileInputs.cache
-C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Antiforgery.dll
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\refs\Microsoft.AspNetCore.Authentication.Cookies.dll
