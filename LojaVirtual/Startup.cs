@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.EntityFrameworkCore;
 using LojaVirtual.Repositories;
 using LojaVirtual.Repositories.Contracts;
+using LojaVirtual.Libraries.Sessao;
 
 namespace LojaVirtual
 {
@@ -33,6 +34,7 @@ namespace LojaVirtual
              * Padrão Repository
              */
 
+            services.AddHttpContextAccessor();
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<INewsletterRepository, NewsletterRepository>();
 
@@ -41,7 +43,7 @@ namespace LojaVirtual
             services.AddSession(options => {
 
             });
-
+            services.AddScoped<Sessao>();
             services.AddControllersWithViews();
             string connection = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=LojaVirtual;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             services.AddDbContext<LojaVirtualContext>(options => options.UseSqlServer(connection));
