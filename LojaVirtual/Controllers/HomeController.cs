@@ -105,7 +105,7 @@ namespace LojaVirtual.Controllers
 
             Cliente clienteDB = _repositoryCliente.Login(cliente.Email, cliente.Senha);
 
-            if(cliente != null)
+            if(clienteDB != null)
             {
                 _loginCliente.Login(clienteDB);
                 return new RedirectResult(Url.Action(nameof(Painel)));
@@ -122,7 +122,7 @@ namespace LojaVirtual.Controllers
            Cliente cliente = _loginCliente.GetCliente();
             if (cliente != null)
             {
-                return new ContentResult() { Content=" Usuário " + cliente.Id + ".Logado !" + "Email: " + cliente.Email + "Idade: " + DateTime.Now.AddYears(cliente.Nascimento.Year) + ". Logado !"};
+                return new ContentResult() { Content=" Usuário " + cliente.Id + ".Logado !" + "Email: " + cliente.Email + "Idade: " + DateTime.Now.AddYears(-cliente.Nascimento.Year).ToString("yyyy") + ". Logado !"};
             }
             else
             {
