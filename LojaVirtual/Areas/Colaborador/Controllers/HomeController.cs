@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LojaVirtual.Libraries.Filtro;
 using LojaVirtual.Libraries.Login;
 using LojaVirtual.Repositories.Contracts;
 using Microsoft.AspNetCore.Mvc;
@@ -27,7 +28,6 @@ namespace LojaVirtual.Areas.Controlador.Controllers
         public IActionResult Login([FromForm]Models.Colaborador colaborador)
         {
             Models.Colaborador colaboradorDB = _repositoryColaborador.Login(colaborador.Email, colaborador.Senha);
-
             if (colaboradorDB != null)
             {
                 _loginColaborador.Login(colaboradorDB);
@@ -39,10 +39,11 @@ namespace LojaVirtual.Areas.Controlador.Controllers
                 return View();
             }
         }
-
-        public IActionResult Painel()
+        [ColaboradorAutorizacao]
+        public IActionResult Logout()
         {
-            return View();
+            _loginColaborador.Logout();
+            return RedirectToAction("Login","Home");
         }
 
         public IActionResult RecuperarSenha()
@@ -50,6 +51,11 @@ namespace LojaVirtual.Areas.Controlador.Controllers
             return View();
         }
         public IActionResult CadastrarNovaSenha()
+        {
+            return View();
+        }
+        [ColaboradorAutorizacao]
+        public IActionResult Painel()
         {
             return View();
         }
