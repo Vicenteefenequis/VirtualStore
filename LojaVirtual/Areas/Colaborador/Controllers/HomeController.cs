@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LojaVirtual.Areas.Controlador.Controllers
 {
+    [Area("Colaborador")]
     public class HomeController : Controller
     {
         public IActionResult Login()
