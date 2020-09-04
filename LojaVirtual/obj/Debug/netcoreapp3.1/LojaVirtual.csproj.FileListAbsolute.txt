@@ -458,3 +458,4 @@ C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreap
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Home\CadastrarNovaSenha.cshtml.g.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Home\Login.cshtml.g.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Home\RecuperarSenha.cshtml.g.cs
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\_ViewImports.cshtml.g.cs
