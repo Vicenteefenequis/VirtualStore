@@ -452,9 +452,6 @@ C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreap
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.csprojAssemblyReference.cache
-C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.csproj.CoreCompileInputs.cache
-C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Home\CadastrarNovaSenha.cshtml.g.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Home\Login.cshtml.g.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Home\RecuperarSenha.cshtml.g.cs
@@ -462,3 +459,4 @@ C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreap
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\_ViewStart.cshtml.g.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Home\Painel.cshtml.g.cs
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Categoria\Index.cshtml.g.cs
