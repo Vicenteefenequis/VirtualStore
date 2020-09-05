@@ -460,3 +460,11 @@ C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreap
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\_ViewStart.cshtml.g.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Home\Painel.cshtml.g.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Categoria\Index.cshtml.g.cs
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\X.PagedList.dll
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\X.PagedList.Mvc.Core.dll
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\bin\Debug\netcoreapp3.1\X.PagedList.Web.Common.dll
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.csproj.CoreCompileInputs.cache
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.MvcApplicationPartsAssemblyInfo.cache

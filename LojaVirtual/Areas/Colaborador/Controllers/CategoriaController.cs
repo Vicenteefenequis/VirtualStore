@@ -41,7 +41,7 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
             return View();
         }
         [HttpGet]
-        public IActionResult Atualizar()
+        public IActionResult Atualizar(int id)
         {
             return View();
         }
