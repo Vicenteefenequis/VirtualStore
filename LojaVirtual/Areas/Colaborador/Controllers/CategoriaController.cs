@@ -37,7 +37,15 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
         [HttpPost]
         public IActionResult Cadastrar([FromForm]Categoria categoria)
         {
-            //Todo Implementar
+            if (ModelState.IsValid)
+            {
+                _categoriasRepository.Cadastrar(categoria);
+
+
+                TempData["MSG_SUCESSO"] = "Registro salvo com sucesso!";
+
+                return RedirectToAction(nameof(Index));
+            }
             return View();
         }
         [HttpGet]
