@@ -469,3 +469,4 @@ C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreap
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\LojaVirtual.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Categoria\Cadastrar.cshtml.g.cs
+C:\Users\vicen\Desktop\LojaVirtual\virtual-store\LojaVirtual\obj\Debug\netcoreapp3.1\Razor\Areas\Colaborador\Views\Categoria\Atualizar.cshtml.g.cs
