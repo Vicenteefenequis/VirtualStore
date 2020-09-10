@@ -6,6 +6,7 @@ using LojaVirtual.Libraries.Filtro;
 using LojaVirtual.Models;
 using LojaVirtual.Repositories.Contracts;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using X.PagedList;
 
 namespace LojaVirtual.Areas.Colaborador.Controllers
@@ -32,6 +33,7 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
         [HttpGet]
         public IActionResult Cadastrar()
         {
+            ViewBag.Categorias = _categoriasRepository.ObterTodasCategorias().Select(a => new SelectListItem(a.Nome,a.Id.ToString()));
             return View();
         }
         [HttpPost]
@@ -46,6 +48,9 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
 
                 return RedirectToAction(nameof(Index));
             }
+
+
+            ViewBag.Categorias = _categoriasRepository.ObterTodasCategorias().Select(a => new SelectListItem(a.Nome, a.Id.ToString()));
             return View();
         }
         [HttpGet]

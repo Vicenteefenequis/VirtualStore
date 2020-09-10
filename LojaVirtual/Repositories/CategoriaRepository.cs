@@ -48,5 +48,9 @@ namespace LojaVirtual.Repositories
             int NumberoPagina = pagina ?? 1;
             return _banco.Categorias.Include(a => a.categoriaPai).ToPagedList<Categoria>(NumberoPagina, _registroPorPagina);
         }
+        public IEnumerable<Categoria> ObterTodasCategorias()
+        {
+            return _banco.Categorias;
+        }
     }
 }
