@@ -10,8 +10,10 @@ namespace LojaVirtual.Models
 {
     public class Categoria
     {
+        [Display(Name ="Código")]
         public int Id { get; set; }
 
+       
         [Required(ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_ERROR001")]
         [MinLength(4, ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_ERROR002")]
         public string Nome { get; set; }
@@ -34,6 +36,8 @@ namespace LojaVirtual.Models
          * -- Mouse sem fio P:2
          * -- Mouse Gamer P:2
          */
+
+        [Display(Name = "Categoria Pai")]
         public int? CategoriaPaiId { get; set; }
 
         /*
