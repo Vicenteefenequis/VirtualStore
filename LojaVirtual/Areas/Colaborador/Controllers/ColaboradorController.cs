@@ -9,8 +9,14 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
 {
     public class ColaboradorController : Controller
     {
-       
-        public IActionResult Index()
+
+        private IColaboradorRepository _colaboradorRepository;
+
+        public ColaboradorController(IColaboradorRepository colaboradorRepository)
+        {
+            _colaboradorRepository = colaboradorRepository;
+        }
+        public IActionResult Index(int? pagina)
         {
             return View();
         }
