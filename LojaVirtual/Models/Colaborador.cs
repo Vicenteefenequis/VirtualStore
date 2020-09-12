@@ -13,7 +13,9 @@ namespace LojaVirtual.Models
      
         [Display(Name="Código")]
         public int Id { get; set; }
-        [Required(ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_ERROR003")]
+
+
+        [Required(ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_ERROR001")]
         [MinLength(4, ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_ERROR002")]
         public string Nome { get; set; }
         
@@ -28,15 +30,14 @@ namespace LojaVirtual.Models
         public string Senha { get; set; }
 
         [NotMapped]
-
-        public string ConfirmaçãoSenha { get; set; }
+        [Display(Name = "Confirme a Senha")]
+        [Compare("Senha", ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_ERROR005")]
+        public string ConfirmacaoSenha { get; set; }
         /*
          TIPO
          C = Comun
          G = Gerente
          */
-
-        [Required(ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_ERROR001")]
         public string Tipo { get; set; }
     }
 }
