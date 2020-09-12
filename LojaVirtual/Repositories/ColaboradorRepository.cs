@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using X.PagedList;
 
+
+
 namespace LojaVirtual.Repositories
 {
     public class ColaboradorRepository : IColaboradorRepository
@@ -52,16 +54,13 @@ namespace LojaVirtual.Repositories
             return _banco.Colaboradores.Find(Id);
         }
 
-        public IEnumerable<Colaborador> ObterTodosColaboradores()
-        {
-            return _banco.Colaboradores.ToList();
-        }
 
         public IPagedList<Colaborador> ObterTodosColaboradores(int? pagina)
         {
             int RegistroProPagina = _conf.GetValue<int>("RegistroPorPagina");
             int NumberoPagina = pagina ?? 1;
-            return _banco.Colaboradores.ToPagedList<Colaborador>(NumberoPagina, RegistroProPagina);
+
+            return _banco.Colaboradores.Where(a=> a.Tipo != "G").ToPagedList<Colaborador>(NumberoPagina, RegistroProPagina);
         }
     }
 }
