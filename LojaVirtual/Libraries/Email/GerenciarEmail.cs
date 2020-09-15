@@ -53,5 +53,22 @@ namespace LojaVirtual.Libraries.Email
            
 
         }
+
+        public void EnviarSenhaParaColaboradorPorEmail(Colaborador colaborador)
+        {
+            string corpoMsg = string.Format("<h3>Colaborador - Loja Virutal</h3>" +
+                "Sua senha é:" +
+                "<h3>{0}</h3>", colaborador.Senha
+            );
+
+        
+            MailMessage mensagem = new MailMessage();
+            mensagem.From = new MailAddress(_configuration.GetValue<string>("Email:Username"));
+            mensagem.To.Add(colaborador.Email);
+            mensagem.Subject = "Colaborador - LojaVirutal - Senha do colaborador: " + colaborador.Nome;
+            mensagem.Body = corpoMsg;
+            mensagem.IsBodyHtml = true;
+            _smtp.Send(mensagem);
+        }
     }
 }

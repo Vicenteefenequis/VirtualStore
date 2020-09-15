@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LojaVirtual.Libraries.Email;
 using LojaVirtual.Libraries.Lang;
 using LojaVirtual.Libraries.Texto;
 using LojaVirtual.Repositories.Contracts;
@@ -15,10 +16,13 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
     {
 
         private IColaboradorRepository _colaboradorRepository;
+        private GerenciarEmail _gerenciarEmail;
 
-        public ColaboradorController(IColaboradorRepository colaboradorRepository)
+
+        public ColaboradorController(IColaboradorRepository colaboradorRepository,GerenciarEmail gerenciarEmail)
         {
             _colaboradorRepository = colaboradorRepository;
+            _gerenciarEmail = gerenciarEmail;
         }
         public IActionResult Index(int? pagina)
         {
@@ -33,8 +37,13 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
             Models.Colaborador colaborador =_colaboradorRepository.ObterColaborador(id);
             colaborador.Senha = KeyGenerator.GetUniqueKey(8);
             _colaboradorRepository.Atualizar(colaborador);
+            
+            _gerenciarEmail.EnviarSenhaParaColaboradorPorEmail(colaborador);
 
-            //TODO - ENIVAR O E-MAIL
+            TempData["MSG_SUCESSO"] = Mensagem.MSG_SUCESSO003;
+
+            return RedirectToAction(nameof(Index));
+
 
 
         }
