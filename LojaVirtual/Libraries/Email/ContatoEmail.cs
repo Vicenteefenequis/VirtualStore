@@ -42,14 +42,7 @@ namespace LojaVirtual.Libraries.Email
              */
             using (SmtpClient client = new SmtpClient())
             {
-                client.EnableSsl = true;
-                client.UseDefaultCredentials = false;
-                client.Credentials = new NetworkCredential("efenequis19981@gmail.com", "Vicente,ivan123");
-                client.Host = "smtp.gmail.com";
-                client.Port = 587;
-                client.DeliveryMethod = SmtpDeliveryMethod.Network;
-
-                client.Send(mensagem);
+               
             }
 
         }
