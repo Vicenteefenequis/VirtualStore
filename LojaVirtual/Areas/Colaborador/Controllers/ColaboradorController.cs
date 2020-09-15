@@ -36,7 +36,7 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
 
             Models.Colaborador colaborador =_colaboradorRepository.ObterColaborador(id);
             colaborador.Senha = KeyGenerator.GetUniqueKey(8);
-            _colaboradorRepository.Atualizar(colaborador);
+            _colaboradorRepository.AtualizarSenha(colaborador);
             
             _gerenciarEmail.EnviarSenhaParaColaboradorPorEmail(colaborador);
 
@@ -79,8 +79,10 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
         }
         public IActionResult Atualizar([FromForm] Models.Colaborador colaborador,int id)
         {
+            ModelState.Remove("Senha");
             if (ModelState.IsValid)
             {
+
                 _colaboradorRepository.Atualizar(colaborador);
                 
                 TempData["MSG_SUCESSO"] = Mensagem.MSG_SUCESSO001;
