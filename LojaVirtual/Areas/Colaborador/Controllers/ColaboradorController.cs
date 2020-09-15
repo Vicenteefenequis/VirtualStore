@@ -55,12 +55,15 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
         }
         public IActionResult Cadastrar([FromForm]Models.Colaborador colaborador)
         {
+            ModelState.Remove("Senha");
             if (ModelState.IsValid)
             {
-                //TODO - GERAR SENHA ALEATORIO, SALVAR NOVA , ENIVAR O E-MAIL
                 colaborador.Tipo = "C";
+                colaborador.Senha = KeyGenerator.GetUniqueKey(8);
                 _colaboradorRepository.Cadastrar(colaborador);
 
+
+                _gerenciarEmail.EnviarSenhaParaColaboradorPorEmail(colaborador);
                 TempData["MSG_SUCESSO"] = Mensagem.MSG_SUCESSO001;
 
                 return RedirectToAction(nameof(Index));
