@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LojaVirtual.Libraries.Lang;
+using LojaVirtual.Libraries.Texto;
 using LojaVirtual.Repositories.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using X.PagedList;
@@ -24,6 +25,20 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
            IPagedList<Models.Colaborador> colaboradores =  _colaboradorRepository.ObterTodosColaboradores(pagina);
             return View(colaboradores);
         }
+
+        [HttpGet]
+        public IActionResult GerarSenha(int id)
+        {
+
+            Models.Colaborador colaborador =_colaboradorRepository.ObterColaborador(id);
+            colaborador.Senha = KeyGenerator.GetUniqueKey(8);
+            _colaboradorRepository.Atualizar(colaborador);
+
+            //TODO - ENIVAR O E-MAIL
+
+
+        }
+
         [HttpGet]
         public IActionResult Cadastrar()
         {
@@ -33,6 +48,7 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
         {
             if (ModelState.IsValid)
             {
+                //TODO - GERAR SENHA ALEATORIO, SALVAR NOVA , ENIVAR O E-MAIL
                 colaborador.Tipo = "C";
                 _colaboradorRepository.Cadastrar(colaborador);
 
