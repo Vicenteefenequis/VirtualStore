@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using LojaVirtual.Libraries.Email;
+using LojaVirtual.Libraries.Filtro;
 using LojaVirtual.Libraries.Lang;
 using LojaVirtual.Libraries.Texto;
 using LojaVirtual.Repositories.Contracts;
@@ -12,6 +13,7 @@ using X.PagedList;
 namespace LojaVirtual.Areas.Colaborador.Controllers
 {
     [Area("Colaborador")]
+    [ColaboradorAutorizacao("G")]
     public class ColaboradorController : Controller
     {
 
@@ -43,7 +45,6 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
             TempData["MSG_SUCESSO"] = Mensagem.MSG_SUCESSO003;
 
             return RedirectToAction(nameof(Index));
-
 
 
         }

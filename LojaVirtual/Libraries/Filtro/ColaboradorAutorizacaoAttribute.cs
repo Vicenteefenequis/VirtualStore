@@ -11,14 +11,27 @@ namespace LojaVirtual.Libraries.Filtro
 {
     public class ColaboradorAutorizacaoAttribute : Attribute, IAuthorizationFilter
     {
-        LoginColaborador _loginCliente;
+        private string _tipoColaboradorAutorizado;
+        public ColaboradorAutorizacaoAttribute(string TipoColaboradorAutorizado = "C")
+        {
+            _tipoColaboradorAutorizado = TipoColaboradorAutorizado;
+        }
+
+        LoginColaborador _loginColaborador;
         public void OnAuthorization(AuthorizationFilterContext context)
         {
-            _loginCliente = (LoginColaborador)context.HttpContext.RequestServices.GetService(typeof(LoginColaborador));
-            Colaborador colaborador = _loginCliente.GetColaborador();
+            _loginColaborador = (LoginColaborador)context.HttpContext.RequestServices.GetService(typeof(LoginColaborador));
+            Colaborador colaborador = _loginColaborador.GetColaborador();
             if (colaborador == null)
             {
                 context.Result = new RedirectToActionResult("Login", "Home", null);
+            }
+            else
+            {
+                if(colaborador.Tipo == "C" && _tipoColaboradorAutorizado == "G")
+                {
+                    context.Result = new ForbidResult();
+                }
             }
         }
     };
