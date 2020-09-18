@@ -41,6 +41,8 @@ namespace LojaVirtual
 
             services.AddRazorPages()
               .AddRazorRuntimeCompilation();
+
+
             services.AddHttpContextAccessor();
             services.AddScoped<IClienteRepository, ClienteRepository>();
             services.AddScoped<INewsletterRepository, NewsletterRepository>();
