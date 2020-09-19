@@ -28,10 +28,7 @@ namespace LojaVirtual.Libraries.Validacao
             {
                 return new ValidationResult("E-mail já existente!");
             }
-
-
             return ValidationResult.Success;
-
         }
     }
 }
