@@ -33,6 +33,7 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
         }
 
         [HttpGet]
+        [ValidateHttpReferer]
         public IActionResult GerarSenha(int id)
         {
 
@@ -93,6 +94,7 @@ namespace LojaVirtual.Areas.Colaborador.Controllers
             return View();
         }
         [HttpGet]
+        [ValidateHttpReferer]
         public IActionResult Excluir(int id)
         {
             _colaboradorRepository.Excluir(id);
