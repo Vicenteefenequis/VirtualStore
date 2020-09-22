@@ -68,7 +68,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            @if (colaborador.GetColaborador().Tipo == "G")
+                            @if (colaborador.GetColaborador().Tipo == LojaVirtual.Models.Constants.ColaboradorTipoConstant.Gerente)
                             {
                                 <a class="nav-link" asp-controller="Colaborador" asp-action="Index">
                                     <span data-feather="users"></span>

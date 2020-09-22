@@ -35,11 +35,7 @@ namespace LojaVirtual.Models
         [Display(Name = "Confirme a Senha")]
         [Compare("Senha", ErrorMessageResourceType = typeof(Mensagem), ErrorMessageResourceName = "MSG_ERROR005")]
         public string ConfirmacaoSenha { get; set; }
-        /*
-         TIPO
-         C = Comun
-         G = Gerente
-         */
+        
         public string Tipo { get; set; }
     }
 }
